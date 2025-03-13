@@ -8,7 +8,7 @@ export const CategoryItem = () => {
         {categoriesData.map((category, index) => (
             <div
                 key={category.id}
-                className={`category-container relative flex items-center justify-center border border-black shadow-md min-h-[240px] lg:min-h-[380px] overflow-hidden group hover:cursor-pointer
+                className={`category-container relative flex items-center justify-center border border-black shadow-md min-h-[240px] lg:min-h-[380px] overflow-hidden group hover:cursor-pointer 
                 ${index < 3 ? 'col-span-12 md:col-span-6 lg:col-span-4' : ''}
                 ${index === 3 ? 'col-span-12 md:col-span-7 lg:col-span-6' : ''}
                 ${index === 4 ? 'col-span-12 md:col-span-5 lg:col-span-6' : ''}
