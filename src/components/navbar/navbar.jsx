@@ -31,7 +31,7 @@ export const NavBar = () => {
               </li>
             </ul>
           </div>
-          <div className="flex items-center border-2 border-red-500 lg:space-x-2">
+          <div className="flex items-center lg:space-x-2">
             <button id="myCartDropdownButton1" data-dropdown-toggle="myCartDropdown1" type="button" className="inline-flex items-center justify-center p-2 text-sm font-medium leading-none text-gray-900 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white">
               <span className="sr-only">Cart</span>
               <svg className="w-5 h-5 lg:me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">

@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { signInWithGooglePopup, createUserDocumentFromAuth } from '../../utils/firebase/firebase';
 
 export const SignIn = () => {
@@ -31,6 +32,7 @@ export const SignIn = () => {
               name="email"
               placeholder="name@mail.com"
               className="w-full p-3 mt-1 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+              required
             />
           </div>
           <div className="mb-4">
@@ -43,6 +45,7 @@ export const SignIn = () => {
                 type={passwordShown ? "text" : "password"}
                 placeholder="********"
                 className="w-full p-3 mt-1 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                required
               />
               <button
                 type="button"
@@ -70,7 +73,7 @@ export const SignIn = () => {
             Sign in with Google
           </button>
           <p className="mt-4 text-sm text-center text-gray-600">
-            Not registered? <a href="#" className="font-medium text-blue-600 hover:underline">Create account</a>
+            Not registered? <Link to="/register-form" className="font-medium text-blue-600 hover:underline">Create account</Link>
           </p>
         </form>
       </div>
